@@ -68,3 +68,11 @@ int main() {
     return 0;
 }
 
+/**
+* 1. Which one of these do you think is easier to implement and use, dynamic or static polymorphism?
+* I think static polymorphism is easier to implement and use.
+
+* 2. Modern C++ development highly encourages static polymorphism over dynamic polymorphism, why do you think that is?
+* Because We can see that static polymorphism use lesser code than dynamic and it's more performant than dynamic.
+*/
+
