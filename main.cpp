@@ -1,20 +1,15 @@
 #include <iostream>
 #include <cmath>
 
-class Shape
-{
-  public:
-  virtual double area() const = 0;    
-};
-
-class Rectangle: public Shape
+class Rectangle
 {
     public:
     Rectangle(double width, double height)
     : width{width}, height{height} {
     }
 
-    double area() const override {
+    double area() const 
+    {
       return width*height;
     }
 
@@ -23,13 +18,15 @@ class Rectangle: public Shape
     double height;
 };
 
-class Square: public Shape {
+class Square 
+{
     public:
     Square(double side)
     : side(side) {        
     }
 
-    double area() const override {
+    double area() const
+    {
       return side*side;
     }
 
@@ -37,13 +34,15 @@ class Square: public Shape {
     double side;
 };
 
-class Circle: public Shape {
+class Circle
+{
     public:
     Circle(double radius)
     : radius{radius} {
     }
 
-    double area() const override {
+    double area() const
+    {
       return M_PI*radius*radius;
     }
 
@@ -64,4 +63,6 @@ int main() {
     printArea(r1);
     printArea(s1);
     printArea(c1);
+
+    return 0;
 }
