@@ -64,4 +64,7 @@ int main() {
     printArea(r1);
     printArea(s1);
     printArea(c1);
+  
+    return 0;
 }
+
