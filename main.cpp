@@ -50,7 +50,8 @@ class Circle
     double radius;
 };
 
-void printArea(const Shape& shape)
+template<class T>
+void printArea(const T& shape)
 {
   std::cout <<shape.area() <<"\n";
 }
@@ -63,7 +64,7 @@ int main() {
     printArea(r1);
     printArea(s1);
     printArea(c1);
-    
+
     return 0;
 }
 
